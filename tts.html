@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword Puzzle</title>
+    <link rel="stylesheet" href="css/tts.css">
+</head>
+
+<!-- Fitran Alfian Nizar -->
+<!-- 1227050047 -->
+<!-- Kelas Praktikum B -->
+
+<body>
+    <h1>Teka-Teki Silang</h1>
+    <h2 id="score" hidden="true"></h2>
+    <div id="container" style="overflow: auto; width: 100%; height: 100%; position:relative;" hidden="true">
+        <div id="quest-con" class="quest-con">
+
+
+            <h3>MENURUN:</h3>
+            <p>1. _____ scripting berarti menjalankan skrip, seperti JavaScript, pada perangkat klien, biasanya di dalam
+                browser.
+            </p>
+            <p>2. Method ______ mengeksekusi fungsi reduksi untuk elemen array.
+            </p>
+            <p>3. JavaScript menggunakan scoping _____ untuk menyelesaikan nama variabel ketika sebuah fungsi dibuat
+                di dalam fungsi lain.
+            </p>
+            <p>4. Ketika sebuah variabel dideklarasikan dalam scope tertentu yang memiliki nama yang sama dengan yang
+                didefinisikan pada scope luarnya dan ketika kita memanggil variabel tersebut dari scope dalam, nilai
+                yang diberikan ke variabel dalam scope
+                dalam adalah
+                nilai yang akan disimpan dalam variabel di memory space. Hal ini dikenal sebagai _____.
+            </p>
+            <p>5. Method _____ membuat array baru yang berisi elemen-elemen yang lolos dari tes yang diberikan oleh
+                sebuah fungsi.
+            </p>
+            <h3>MENDATAR:</h3>
+            <p>1. _____ adalah kombinasi dari sebuah fungsi yang digabungkan bersama (enclosed) dengan referensi ke
+                state
+                sekitarnya (lexical environment).
+            </p>
+            <p>6. Perulangan _____ mengulang sebuah blok kode selama kondisi yang ditentukan benar.
+            </p>
+            <p>7. ______ dari sebuah variabel berarti variabel tersebut dapat diakses di dalam blok yang berada di
+                antara kurung kurawal.
+            </p>
+            <p>8. Script _____ berjalan di server back-end.
+            </p>
+            <p>9. _____ adalah perilaku default JavaScript untuk memindahkan deklarasi ke bagian atas.
+            </p>
+
+        </div>
+        <div id="table-con" class="table-con">
+            <table id="tts-table" border="0">
+
+            </table>
+        </div>
+    </div>
+    <button onclick="startTTS()" id="start" class="green-butt">Mulai</button>
+    <button onclick="checkAnswers()" hidden="true" id="check" class="green-butt">Cek Jawaban</button>
+    <button onclick="retry()" hidden="true" id="retry" class="red-butt">Coba Lagi</button>
+
+    <div id="message"></div>
+
+    <script src="scripts/tts.js"></script>
+</body>
+
+</html>
